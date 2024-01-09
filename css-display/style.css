@@ -1,0 +1,27 @@
+h1,
+p,
+span,
+a,
+h3,
+div{
+  background-color: teal;
+}
+
+h1{
+    display: inline-block;
+}
+
+span{
+    display: block;
+}
+
+a.btn{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgb(0, 247, 255);
+    color: #fff;
+}
+
+div{
+    height: 10px;
+}
