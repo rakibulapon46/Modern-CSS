@@ -1,0 +1,37 @@
+.parent{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    top: 50px;
+    left: 50px;
+}
+
+.child{
+    background-color: blueviolet;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-top: -25px;
+    margin-left: -25px; */
+    transform: translate(-50%, -50%);
+}
+
+.sec{
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
+}
+
+.stk{
+    position: sticky;
+    background-color: rgb(34, 249, 34);
+    height: 60px;
+    top: 0;
+    left: 0;
+}
