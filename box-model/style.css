@@ -60,3 +60,25 @@ font-weight: 400;
 font-variant: small-caps;
 text-shadow: 0px 0px 15px rgb(2, 255, 99);
 }
+
+a{
+    margin: 20px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+a:hover{
+    color: rgb(6, 118, 255);
+}
+a:active{
+    color: rgb(255, 213, 0);
+    font-weight: bold;
+    font-size: 80px;
+}
+a:focus{
+    color: rgb(132, 255, 0);
+}
