@@ -1,0 +1,49 @@
+table,
+th,
+td {
+  border: 1px solid tomato;
+  border-collapse: separate;
+  border-collapse:collapse;
+  padding: 5px 10px;
+}
+
+table{
+    width: 100%;
+}
+
+:is(th, td){
+    color: #fff;
+}
+
+th{
+    background-color: #CB4335 ;
+    border: 1px solid #CB4335;
+    text-align: left;
+    height: 50px;
+}
+
+td{
+    background-color: #F7DC6F ;
+    border: 1px solid #21618C;
+    height: 30px;
+    vertical-align: top;
+    vertical-align: bottom;
+    vertical-align: middle;
+}
+
+tr:hover th,
+tr:hover td{
+    background-color:#1ABC9C ;
+    color: #000;
+}
+
+/*  single column hover
+tr :where(td, th):hover{
+    background-color:#1ABC9C ;
+} */
+
+div{
+    width: 400px;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
