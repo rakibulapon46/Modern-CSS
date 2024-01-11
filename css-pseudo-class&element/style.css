@@ -1,0 +1,51 @@
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: #005eff;
+}
+
+/* li:first-child, li:last-child{
+    color: red;
+} */
+
+li:nth-child(2n + 2) {
+    color: #f53b57;
+}
+
+body{
+    background: aqua;
+    background-image: url(./roses.jpg);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body::before{
+    content: "Before";
+    background-image: url(./roses.jpg);
+    background-size: 100px 300px;
+    background-position: bottom center;
+}
+body::after{
+    content: "After";
+    background-image: url(./roses.jpg);
+    background-size: 100px 300px;
+    background-position: bottom center;
+}
+
+p::first-line{
+    font-weight: bold;
+    color: #f53b57;
+    font-size: 35px;
+}
+
+p::first-letter{
+    font-size: 65px;
+}
+
+p::selection{
+    background: #1e272e;
+    color: #fff;
+}
