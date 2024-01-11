@@ -1,0 +1,37 @@
+p{
+    color: #f79400;
+}
+
+div p{
+    font-weight: bold;
+}
+
+
+div > p{
+    color: #00ddff;
+}
+
+div + p{
+    color: blue;
+}
+
+div ~ p{
+    color: #ED4C67;
+}
+
+section + p{
+    color: #1bb200;
+}
+
+section ~ p{
+    color: #1a0da9;
+}
+
+li{
+    color: #f53b57;
+}
+
+ul ul > li {
+    color: #0be881;
+    list-style-type: square;
+}
