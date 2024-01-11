@@ -1,0 +1,134 @@
+/* img{
+    max-width: 100%;
+    opacity: 1;
+}
+
+img:hover{
+    opacity: 0.4;
+} */
+
+/* .child_service img{
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.child_service:hover img{
+    transform: scale(1.2);
+}
+
+.child_service{
+    color: #fff;
+    text-align: center;
+    width: 400px;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner_service{
+    padding: 10% 5%;
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    top: -700px;
+    left: 0;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.child_service:hover > .inner_service{
+    top: 0;
+}
+
+.inner_service::after{
+    background-color: #0c2461;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.child_service h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.child_service a{
+    display: inline-block;
+    background-color: #fa983a;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+} */
+
+.child_service{
+    color: #fff;
+    width: 380px;
+    position: relative;
+    margin: 25px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.child_service img{
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.child_service:hover img{
+    transform: scale(1.2);
+}
+
+.inner_service{
+    padding: 10% 5%;
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    top: -650px;
+    left: 0;
+    z-index: 10;
+    transition: 0.6s;
+}
+
+.child_service:hover > .inner_service{
+    top: 0;
+}
+
+.inner_service::after{
+    background: #0c2461;
+    padding: 10% 5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    content: '';
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.child_service h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.child_service a{
+    background-color: #fa983a;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 1em;
+}
