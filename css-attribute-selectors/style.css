@@ -1,4 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a[target]{
+    color: #ee5253;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[target='_self']{
+    color: #1dd1a1;
+    font-weight: bold;
+}
+
+a[title~='Pro']{
+    color: rgb(183, 0, 255);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+a[title~='Apon']{
+    color: rgb(247, 194, 4);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+/* for specific div class selectors...[ |='child-className' ] tahole specific child gula kaj korbe*/
+div[class|='child']{
+    width: 300px;
+    height: 200px;
+    background-color: #8a62da;
+}
+
+/* for all div class selectors...[ ^='child' ]  tahole all child gula kaj korbe*/
+div[class^='child']{
+    width: 300px;
+    height: 200px;
+    background-color: #ff9500;
+    margin-bottom: 10px;
+}
+
+/* for specific div class selectors..by className last 3 letter...[ $='ial' ]  tahole specific className er last a 'ial' letter ase class gula kaj korbe*/
+div[class$='ial']{
+    background-color: #00ffe5;
+}
+
+
+/* for specific div class selectors..by className any 3 letter...[ *='erv' ]  tahole specific className er moddhe 'erv' letter ase class gula kaj korbe*/
+div[class*='erv']{
+    background-color: #00ff2f;
 }
