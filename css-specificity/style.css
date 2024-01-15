@@ -1,0 +1,15 @@
+#test p.para{
+    color: rgb(26, 255, 0) !important;
+}
+#test p.para{
+    color: rgb(255, 0, 0);
+}
+.child p.para{
+    color: rgb(191, 0, 255);
+}
+p.para{
+    color: rgb(0, 60, 255);
+}
+p{
+    color: green;
+}
