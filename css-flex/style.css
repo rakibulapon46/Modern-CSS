@@ -1,0 +1,118 @@
+:root {
+  --violet: #f2ebf3;
+  --pink: #ffcc01;
+  --darkColor: #6bb094;
+  --whiteColor: #fff;
+  --defaultWidth: 95%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--violet);
+  margin: 0;
+}
+
+.main_area {
+  margin: 20px auto;
+  width: var(--defaultWidth);
+  background: var(--pink);
+  padding: 10px;
+}
+
+.main_area h2 {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--darkColor);
+  color: var(--whiteColor);
+}
+
+.main{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap-reverse; */
+    flex-flow: row wrap;
+
+    /* X borabor justify-content use hoi. */
+
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+}
+
+.child {
+  background-color: var(--darkColor);
+  color: var(--whiteColor);
+  padding: 30px;
+  margin: 1%;
+  flex-basis: 30%;
+}
+
+.child h4 {
+  margin: 0px;
+  font-size: 25px;
+}
+.child p {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.child a {
+  padding: 10px 20px;
+  background-color: var(--pink);
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--darkColor);
+}
+
+.child a:hover {
+  background-color: var(--violet);
+  color: var(--pink);
+}
+
+
+.extra {
+    margin-bottom: 25px;
+    height: 300px;
+    background: var(--whiteColor);
+
+     /* Y borabor align-items use hoi. */
+     
+    /* align-items: stretch;
+    align-items: start;
+align-items: end;
+align-items: flex-start;
+align-items: flex-end;
+align-items: center; */
+align-items: baseline;
+}
+
+.extra p{
+    margin: 0;
+}
+
+.extra3{
+    align-content: space-around;
+}
+
+.extra3 .child{
+    background: var(--pink);
+}
+
+.extra4{
+    align-items: center;
+    justify-content: center;
+}
