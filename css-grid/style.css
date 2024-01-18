@@ -1,0 +1,112 @@
+:root {
+    --violet: #f2ebf3;
+    --pink: #ffcc01;
+    --darkColor: #6bb094;
+    --whiteColor: #fff;
+    --defaultWidth: 95%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: var(--violet);
+    margin: 0;
+  }
+  
+  .main_area {
+    margin: 20px auto;
+    width: var(--defaultWidth);
+    background: var(--pink);
+    padding: 10px;
+  }
+  
+  .main_area h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--darkColor);
+    color: var(--whiteColor);
+  }
+  
+/* grid start */
+  .main{
+      display: grid;
+      /* grid-template-columns: 60% 40%;
+      grid-template-columns: 300px 40%;
+      grid-template-columns: 2fr 1fr 1fr; 
+      grid-template-columns: repeat(3, 200px);*/
+      grid-template-columns: auto auto auto; 
+      column-gap: 1%;
+      row-gap: 10px;
+      grid-auto-rows: minmax(80px, auto);
+      /* gap: 15px;
+      grid-template-rows: 1fr 2fr;
+      grid-template-rows: 100px 300px;
+      justify-content: space-evenly;
+      align-content: space-between; */
+      /* height: 600px; */
+      /* grid-template-areas: 'header header' 'footer footer' ; */
+  }
+  
+  .child {
+    background-color: var(--darkColor);
+    color: var(--whiteColor);
+    padding: 20px;
+    flex-basis: 28%;
+  }
+  
+  .child h4 {
+    margin: 0px 0 20px 0px;
+    font-size: 25px;
+  }
+  .child p {
+    padding: 10px 0;
+    font-weight: 600;
+  }
+  /* .child:nth-child(4) p,
+  .child:nth-child(5) p,
+  .child:nth-child(6) p{
+    display: none;
+  } */
+  
+  .child a {
+    padding: 10px 20px;
+    background-color: var(--pink);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--darkColor);
+  }
+  
+  .child a:hover {
+    background-color: var(--violet);
+    color: var(--pink);
+  }
+
+  /* .child:nth-child(1){
+    grid-area: header;
+  }
+  .child:nth-child(6){
+    grid-area: footer;
+  } */
+
+  .child:nth-child(1){
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / 2;
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* grid-row: 1/3; */
+
+    grid-row-start: 1;
+    grid-row-end: span 3;
+  }
+
+  .child:nth-child(5){
+    grid-row: 2/span 2;
+  }
