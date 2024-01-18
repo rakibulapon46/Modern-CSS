@@ -1,0 +1,90 @@
+:root {
+  --yellow: #ffcc01;
+  --lightGreen: #6bb094;
+  --whiteColor: #ffffff;
+  --defaultWidth: 90%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.main_menu {
+  background: var(--yellow);
+  padding: 10px;
+  margin: 20px auto;
+  width: var(--defaultWidth);
+}
+
+.main_menu h2 {
+  text-align: center;
+  background: var(--lightGreen);
+  padding: 20px;
+  color: var(--whiteColor);
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.child {
+  background: var(--lightGreen);
+  padding: 20px;
+  color: var(--whiteColor);
+  flex-basis: 30%;
+  margin: 1%;
+}
+
+.child h3 {
+  margin: 0;
+  font-size: 25px;
+}
+.child p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.child a {
+  padding: 10px 20px;
+  background: var(--yellow);
+  text-decoration: none;
+  color: var(--lightGreen);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.child a:hover {
+  background: var(--whiteColor);
+  color: var(--yellow);
+}
+
+.extra {
+  background: var(--whiteColor);
+  margin-bottom: 20px;
+  height: 300px;
+  align-items: center;
+  align-items: baseline;
+}
+
+.extra p{
+    margin: 0;
+}
+
+.extra3 .child {
+    background: var(--yellow);
+  }
+
+.extra4 {
+    justify-content: center;
+    align-items: center;
+  }
+

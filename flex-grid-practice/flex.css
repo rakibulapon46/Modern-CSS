@@ -1,0 +1,75 @@
+:root {
+  --violetColor: #686de0;
+  --creamColor: #f6e58d;
+  --orangeColor: #E55C00;
+  --greenColor: #7AE500;
+  --pinkColor: #E50099;
+  --skyColor: #00B7E5;
+  --whiteColor: #fff;
+}
+
+.position{
+    background: var(--violetColor);
+    max-width: 100%;
+    height: 300px;
+    padding: 2%;
+    display: flex;
+    margin-bottom: 20px;
+}   
+
+.child{
+    width: 50px;
+    height: 50px;
+    background: var(--creamColor);
+    padding-top: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.child:nth-child(5){
+    order: 1;
+    background: var(--orangeColor);
+    color: var(--whiteColor);
+}
+.child:nth-child(1){
+    order: 2;
+    background: var(--greenColor);
+    color: var(--whiteColor);
+}
+.child:nth-child(6){
+    order: 3;
+    background: var(--pinkColor);
+    color: var(--whiteColor);
+}
+.child:nth-child(3){
+    order: 4;
+    background: var(--skyColor);
+    color: var(--whiteColor);
+}
+
+
+.item{
+    width: 50px;
+    height: 50px;
+    background: var(--creamColor);
+    padding-top: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.item:nth-child(2){
+order: 1;
+flex-grow: 1;
+}
+.item:nth-child(1){
+order: 2;
+flex-grow: 1;
+}
+.item:nth-child(3){
+order: 3;
+flex-grow: 2;
+}
+.item:nth-child(4){
+order: 4;
+flex-grow: 4;
+}
